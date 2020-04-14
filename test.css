@@ -1,0 +1,160 @@
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:150vh;
+    flex-direction:column;
+}
+
+h2 {
+font-family:Sans-serif;
+font-size:18px;
+margin-top:40px;
+color:#333;
+}
+
+.monkey_head {
+    stroke-dasharray:597;
+    stroke-dashoffset:597;
+}
+
+.l_eye {
+    stroke-dasharray:283;
+    stroke-dashoffset:283;
+}
+
+.r_eye {
+    stroke-dasharray:283;
+    stroke-dashoffset:283;
+}
+
+.leyes {
+    stroke-dasharray:31.4;
+    stroke-dashoffset:31.4;
+}
+
+.reyes {
+    stroke-dasharray:31.4;
+    stroke-dashoffset:31.4;
+}
+
+.monkey_mouth1 {
+    stroke-dasharray:59;
+    stroke-dashoffset:59;
+}
+
+.monkey_mouth2 {
+    stroke-dasharray:29;
+    stroke-dashoffset:29;
+}
+
+@keyframes monkey_head {
+    from {
+        stroke-dashoffset:597;
+    }
+    
+    to {
+        stroke-dashoffset:1196;
+    }
+}
+
+input[type='checkbox']:checked+svg .monkey_head {
+    animation:monkey_head 3s ease-out;
+    animation-fill-mode:forwards;
+}
+
+@keyframes l_eye {
+    from {
+        stroke-dashoffset:283;
+    }
+    
+    to {
+        stroke-dashoffset:566;
+    }
+}
+
+input[type='checkbox']:checked+svg .l_eye {
+    animation:l_eye 3s ease-out;
+    animation-fill-mode:forwards;
+    animation-delay:3s;
+}
+
+@keyframes r_eye {
+    from {
+        stroke-dashoffset:283;
+    }
+
+    to {
+        stroke-dashoffset:0;
+    }
+}
+
+input[type='checkbox']:checked+svg .r_eye {
+    animation:r_eye 3s ease-out;
+    animation-fill-mode:forwards;
+    animation-delay:5.8s;
+}
+
+@keyframes leyes {
+    from {
+        stroke-dashoffset:31.4;
+    }
+    
+    to {
+        stroke-dashoffset:0;
+    } 
+}
+
+input[type='checkbox']:checked+svg .leyes {
+    animation:leyes 1s ease-out;
+    animation-fill-mode:forwards;
+    animation-delay:15s;
+}
+
+@keyframes reyes {
+    from {
+        stroke-dashoffset:31.4;
+    }
+    
+    to {
+        stroke-dashoffset:0;
+    } 
+}	
+
+input[type='checkbox']:checked+svg .reyes {
+    animation:reyes 1s ease-out;
+    animation-fill-mode:forwards;
+    animation-delay:16s;
+}	
+
+@keyframes monkey_mouth1 {
+    from {
+        stroke-dashoffset:59;
+    }
+    
+    to {
+        stroke-dashoffset:0;
+    }
+}
+
+input[type='checkbox']:checked+svg .monkey_mouth1 {
+    animation:monkey_mouth1 3s ease-out;
+    animation-fill-mode:forwards;
+    animation-delay:9s;
+}
+
+@keyframes monkey_mouth2 {
+    from {
+        stroke-dashoffset:29;
+    }
+    
+    to {
+        stroke-dashoffset:0;
+    }
+}
+
+input[type='checkbox']:checked+svg .monkey_mouth2 {
+    animation:monkey_mouth2 3s ease-out;
+    animation-fill-mode:forwards;
+    animation-delay:12s;
+}
